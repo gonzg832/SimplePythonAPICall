@@ -4,7 +4,7 @@ url_host = "https://dog.ceo"
 endpoint = "/api/breeds/list/all"
 query = ""
 
-url = url_host + endpoint + query
+url = url_host + endpoint # + query
 
 response = requests.get(url)
 breeds = response.json()["message"]
@@ -21,6 +21,6 @@ for breed in all_breeds:
 
 # display all bulldog subbreeds
 bulldog_subbreeds = breeds["bulldog"]
-input("Press enter to get all bulldog subbreeds")
+input("\nPress enter to get all bulldog subbreeds")
 for sub in bulldog_subbreeds:
   print(sub)
