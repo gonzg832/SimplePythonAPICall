@@ -17,7 +17,10 @@ for breed in all_breeds:
   print(breed)
 
 # get a list of all subbreeds of a breed with at least 3 sub_breeds 
-# but NOT buildings
+terrier_subbreeds = breeds["terrier"]
+input("\nPress enter to get all terrier subbreeds")
+for sub in terrier_subbreeds:
+  print(sub)
 
 # display all bulldog subbreeds
 bulldog_subbreeds = breeds["bulldog"]
